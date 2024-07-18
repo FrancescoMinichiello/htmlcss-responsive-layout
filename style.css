@@ -195,8 +195,14 @@ iframe {
 }
 
 .tiramisu-story-title {
-    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    border-bottom: 3px solid #F7972D;
+    width: 100px;
 }
+
 
 /*Footer*/
 
