@@ -20,28 +20,175 @@ h1 {
     font-family: 'Nerko One', cursive;
     color: #FF9614;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 0 20px;
+    font-weight: 500;
 }
 
 body {
     background-color: #F7F5F3;
 }
 
+ul {
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+li {
+    line-height: 40px;
+}
 
 /*Utils*/
+.col-purple {
+    color: #4E3969;
+}
 
+.col-orange {
+    color: #FF9614;
+}
+
+.bg-col-white {
+    background-color: white;
+}
+
+.bg-col-lightgray {
+    background-color: #F6F5F9;
+}
+
+.pd-sm {
+    padding: 20px;
+}
+
+.mg-top-sm {
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.ds-none {
+    display: none;
+}
+
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+/*Video e titolo ricetta*/
+
+.recipe {
+    text-align: center;
+    justify-content: space-between;
+    align-items: center
+}
+
+.title-recipe {
+    font-size: 2rem;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.category {
+    color: #999999;
+    letter-spacing: 2px;
+}
+
+.rating {
+    font-size: 20px;
+}
+
+.rating::before {
+    font: var(--fa-font-solid);
+    content: '\f005';
+    color: #FF9614;
+}
+
+.rate-btn {
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 15px;
+    color: white;
+    background-color: #FF9614;
+}
+
+iframe {
+    margin-top: 30px;
+    width: 100%;
+    min-height: 400px;
+}
+
+/*info sulla ricetta*/
+
+.info {
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.kcal {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #7B69A2;
+}
+
+.more-info {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
 
 /*CSS Media Queries Mobile*/
 @media screen and (min-width: 576px) {}
 
 /*CSS Media Queries Tablet*/
 @media screen and (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
     h1 {
         text-align: left;
+    }
+
+    .ds-none {
+        display: inline-block;
+    }
+
+    iframe {
+        min-height: 400px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
     }
 }
 
 /*CSS Media Queries Desktop*/
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .container {
+        display: flex;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .col-videos {
+        flex-basis: 70%;
+    }
+
+    .col-info {
+        flex-basis: 30%;
+    }
+
+    ul {
+        gap: 0;
+    }
+
+    iframe {
+        min-height: 600px;
+    }
+}
