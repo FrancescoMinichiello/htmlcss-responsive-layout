@@ -1,0 +1,102 @@
+/*CSS Media Queries Tablet*/
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .title-box {
+        padding: 40px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    .title {
+        display: inline-block;
+    }
+
+    iframe {
+        min-height: 400px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .share-list li {
+        padding: 0 40px;
+        border-radius: 40px;
+        font-size: 15px;
+    }
+
+    .ads-banner img {
+        display: inline-block;
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+
+/*CSS Media Queries Desktop*/
+
+@media screen and (min-width: 992px) {
+    .container {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    ul {
+        gap: 0;
+    }
+
+    .title-box {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .col-videos {
+        flex-basis: 80%;
+    }
+
+    .col-info {
+        flex-basis: 300px;
+    }
+
+    iframe {
+        min-height: 600px;
+    }
+
+    .ds-none {
+        display: inline-block;
+        margin-left: 4px;
+        font-weight: 700;
+    }
+
+    .ads-banner img {
+        display: inline-block;
+        width: 80%;
+        padding: 40px;
+        margin: 20px auto;
+    }
+
+    #tiramisu {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px
+    }
+
+    footer {
+        text-align: left;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
